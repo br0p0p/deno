@@ -128,7 +128,7 @@ test(function tests_console_stringify_circular() {
 
 test(async function tests_createHttpServer() {
   const server = createHttpServer((req: Request, res: Response) => {
-    const object = {name: "testdata"};
+    const object = { name: "testdata" };
     const objectString = JSON.stringify(object);
     const enc = new TextEncoder();
     const objectData = enc.encode(objectString);
